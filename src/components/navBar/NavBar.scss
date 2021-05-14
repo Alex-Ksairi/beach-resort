@@ -1,0 +1,136 @@
+// importing _variables, _mixin
+@import '../../styles/variables'; 
+@import '../../styles/mixin' ;
+
+// NavBar styling
+.navbar {
+    @include measurement (100%, auto);
+    @include position (fixed, 0, 0);
+    
+    background-color: var(--bgNavBar);
+    z-index: 1;
+
+    .nav-center {
+        @include tablet {
+            .nav-center {
+                max-width: 1170px;
+                margin: 0 auto;
+                display: flex;
+            }
+        }
+
+        .nav-header {
+            @include display (flex, space-between, unset);
+    
+            .logo-link {
+                color: var(--mainBlack);
+    
+                .logo {
+                    @include margin (25px, 50px, 30px, 0);
+        
+                    border: 2px solid #555;
+        
+                    span {
+                        @include margin (0, 4px, 0, 4px);
+        
+                        font-size: 1.9rem;
+                        letter-spacing: var(--mainSpacing);
+                    }
+        
+                    span:first-child {
+                        font-weight: 800;
+                        text-shadow: $shadowDark;
+                    }
+        
+                    span:last-child {
+                        color: var(--primaryColor);
+                        font-weight: 400;
+                        text-shadow: $shadowLight;
+                    }
+                }
+            }
+    
+            .nav-btn {
+                margin-right: 50px;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                outline: none;
+    
+                @include tablet {
+                    .nav-btn {
+                      display: none;
+                    }
+                }
+    
+                .nav-icon {
+                    font-size: 2.2rem;
+                    color: var(--primaryColor);
+                }
+            }
+        }
+
+        .nav-links {
+            height: 0;
+            overflow: hidden;
+            transition: var(--mainTransition);
+    
+            @include tablet {
+                .nav-links {
+                    height: auto;
+                    display: flex;
+                    margin-left: 4rem;
+                }
+            }
+    
+            a {
+                @include padding (20px, 20px, 20px, 20px);
+        
+                display: block;
+                line-height: 30px;
+                font-size: 1.5rem;
+                font-weight: 600;
+                background-color: var(--bgNavBar);
+                color: #555;
+                text-align: center;
+                transition: var(--mainTransition);
+                letter-spacing: var(--mainSpacing);
+    
+                @include tablet {
+                    a {
+                        margin: 0 1rem;
+                        padding: 0.5rem 0;
+                    }
+                }
+        
+                &:hover {
+                    color: var(--primaryColor);
+                }
+            }
+
+            .language {
+                // @include padding (0, 0, 0, 20px);
+                height: 50px;
+                text-align: center;
+                background-color: var(--bgNavBar);
+            
+                select {
+                    @include padding (5px, 5px, 5px, 5px);
+            
+                    border: none;
+                    border-radius: 8px;
+                    background-color: var(--primaryColor);
+                    color: var(--mainGrey);
+                }
+            }
+        }
+
+        .show-nav {
+                height: 250px;
+        }
+    }
+}
+
+/* end of navbar */
+
+

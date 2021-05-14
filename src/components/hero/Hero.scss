@@ -1,0 +1,16 @@
+// importing variables, mixin scss
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+/* Hero */
+.defaultHero,
+.roomsHero {
+  min-height: calc(100vh - 66px);
+  background: url("../../images/defaultBcg.jpeg") center/cover no-repeat;
+  
+  @include display (flex, center, center);
+}
+.roomsHero {
+  background-image: url("../../images/room-2.jpeg");
+  min-height: 60vh;
+}

@@ -1,0 +1,110 @@
+// importing _variables, _mixin
+@import './variables'; 
+@import './mixin' ;
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+// :root
+:root {
+    --primaryColor: #7a6732;
+    --mainWhite: #fff;
+    --offWhite: #f7f7f7;
+    --bgNavBar: #f9f7f9;
+    --mainBlack: #333;
+    --mainGrey: #ececec;
+    --darkGrey: #cfcfcf;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 3px;
+    --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+// globals
+body {
+    // height: 100vh;
+    font-family: $fontFamily;
+    color: var(--mainBlack);
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 0.5em;
+}
+  
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.75em;
+}
+  
+h3 {
+    font-size: 1.5em;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+  
+h4 {
+    font-size: 1.2em;
+    line-height: 1.25;
+    margin-bottom: 1.25em;
+}
+  
+h5 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+  
+h6 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+  
+.btn-primary {
+    display: inline-block;
+
+    text-decoration: none;
+    color: var(--mainBlack);
+    background-color: #af9a7d;
+    padding: 0.4rem 0.9rem;
+    border: 3px solid #af9a7d;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    letter-spacing: var(--mainSpacing);
+    transition: var(--mainTransition);
+
+    &:hover {
+        background: transparent;
+        color: #af9a7d;
+    }
+}
+
+  
+.loading {
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 3rem;
+}
+  
+.error {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+  
+.empty-search {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 2rem 0;
+    padding: 1rem;
+    letter-spacing: var(--mainSpacing);
+}
+  
+/* end of globals */

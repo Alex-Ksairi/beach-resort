@@ -1,0 +1,151 @@
+.navbar {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--bgNavBar);
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .nav-center .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.navbar .nav-center .nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+.navbar .nav-center .nav-header .logo-link {
+  color: var(--mainBlack);
+}
+
+.navbar .nav-center .nav-header .logo-link .logo {
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  margin-right: 0;
+  border: 2px solid #555;
+}
+
+.navbar .nav-center .nav-header .logo-link .logo span {
+  margin-top: 0;
+  margin-left: 4px;
+  margin-bottom: 0;
+  margin-right: 4px;
+  font-size: 1.9rem;
+  letter-spacing: var(--mainSpacing);
+}
+
+.navbar .nav-center .nav-header .logo-link .logo span:first-child {
+  font-weight: 800;
+  text-shadow: 2px 2px 3px #555;
+}
+
+.navbar .nav-center .nav-header .logo-link .logo span:last-child {
+  color: var(--primaryColor);
+  font-weight: 400;
+  text-shadow: 2px 2px 3px #7a6732;
+}
+
+.navbar .nav-center .nav-header .nav-btn {
+  margin-right: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .nav-center .nav-header .nav-btn .nav-btn {
+    display: none;
+  }
+}
+
+.navbar .nav-center .nav-header .nav-btn .nav-icon {
+  font-size: 2.2rem;
+  color: var(--primaryColor);
+}
+
+.navbar .nav-center .nav-links {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: var(--mainTransition);
+  transition: var(--mainTransition);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .nav-center .nav-links .nav-links {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 4rem;
+  }
+}
+
+.navbar .nav-center .nav-links a {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  display: block;
+  line-height: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: var(--bgNavBar);
+  color: #555;
+  text-align: center;
+  -webkit-transition: var(--mainTransition);
+  transition: var(--mainTransition);
+  letter-spacing: var(--mainSpacing);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .nav-center .nav-links a a {
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+  }
+}
+
+.navbar .nav-center .nav-links a:hover {
+  color: var(--primaryColor);
+}
+
+.navbar .nav-center .show-nav {
+  height: auto;
+}
+
+.navbar .nav-center .nav-links .language {
+  height: 50px;
+  text-align: center;
+  background-color: var(--bgNavBar);
+}
+
+.navbar .nav-center .nav-links .language select {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primaryColor);
+  color: var(--mainGrey);
+}
+
+/* end of navbar */
+/*# sourceMappingURL=NavBar.css.map */

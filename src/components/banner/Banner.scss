@@ -1,0 +1,56 @@
+// importing variables, mixin
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+/* Banner */
+.banner {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--mainWhite);
+    padding: 6rem 8rem;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+
+    @include screen {
+        .banner {
+            padding: 5rem 6rem;
+        }
+    }
+
+    @include mobile {
+        .banner {
+            padding: 2rem 3rem;
+        }
+    }
+
+    h1 {
+        font-size: 3rem;
+
+        @include screen {
+            h1 {
+                font-size: 6rem;
+            }
+        }
+
+        @include mobile {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    div {
+        @include measurement (10rem, 5px);
+        
+        margin: 1.7rem auto;
+        background: #af9a7d;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* End of Banner */
