@@ -16,6 +16,9 @@ import Banner from "../../components/banner/Banner";
 // importing Services
 import Services from '../../components/serviceSection/Services';
 
+// importing FeaturedRoom
+import FeaturedRoom from '../../components/featuredRoom/FeaturedRoom';
+
 
 export default function HomePage() {
     return (
@@ -29,6 +32,7 @@ export default function HomePage() {
                 </Banner>
             </Hero>
             <Services />
+            <FeaturedRoom />
         </React.Fragment>
     )
 }

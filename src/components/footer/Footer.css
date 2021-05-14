@@ -6,7 +6,7 @@
   background-color: #333;
   color: whitesmoke;
   font-size: 1rem;
-  position: fixed;
+  position: static;
   bottom: 0;
 }
 /*# sourceMappingURL=Footer.css.map */

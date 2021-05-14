@@ -1,0 +1,54 @@
+/* services */
+.services {
+  padding: 5rem 0;
+}
+
+.services {
+  background: var(--darkGrey);
+  text-align: center;
+}
+
+.services .services-center {
+  width: 90vw;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(255px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 50px;
+}
+
+@media screen and (min-width: 992px) {
+  .services .services-center .services-center {
+    width: 95vw;
+    max-width: 1170px;
+  }
+}
+
+.services .services-center .service span {
+  display: inline-block;
+  color: var(--primaryColor);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.services .services-center .service h6 {
+  letter-spacing: var(--mainSpacing);
+  text-transform: uppercase;
+}
+
+.services .services-center .service p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+@media screen and (min-width: 1200px) {
+  .services .services-center .service p p {
+    width: 100%;
+  }
+}
+
+/*end of services */
+/*# sourceMappingURL=Services.css.map */

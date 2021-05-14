@@ -1,1 +1,95 @@
-/* No CSS *//*# sourceMappingURL=RoomCard.css.map */
+/* room */
+.room {
+  -webkit-box-shadow: var(--lightShadow);
+          box-shadow: var(--lightShadow);
+  -webkit-transition: var(--mainTransition);
+  transition: var(--mainTransition);
+  border-radius: 20px;
+}
+
+.room:hover {
+  -webkit-box-shadow: var(--darkShadow);
+          box-shadow: var(--darkShadow);
+}
+
+.room .img-container {
+  position: relative;
+  -webkit-transition: var(--mainTransition);
+  transition: var(--mainTransition);
+  border-radius: 20px 20px 0 0;
+}
+
+.room .img-container:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.room .img-container:hover img {
+  opacity: 0.3;
+}
+
+.room .img-container:hover .price-top {
+  opacity: 0;
+}
+
+.room .img-container:hover .room-link {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.room .img-container img {
+  width: 100%;
+  display: block;
+  -webkit-transition: var(--mainTransition);
+  transition: var(--mainTransition);
+  border-radius: 20px 20px 0 0;
+}
+
+.room .img-container .price-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 0.7rem;
+  padding-left: 1.8rem;
+  padding-bottom: 1.2rem;
+  padding-right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--mainWhite);
+  border-bottom-right-radius: 1rem;
+  border-top-left-radius: 1.6rem;
+  font-size: 0.7rem;
+  vertical-align: middle;
+  -webkit-transition: var(--mainTransition);
+  transition: var(--mainTransition);
+}
+
+.room .img-container .price-top h6 {
+  margin-bottom: 2px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding-right: 10px;
+  letter-spacing: var(--mainSpacing);
+}
+
+.room .img-container .room-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.room .room-info {
+  background: var(--darkGrey);
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: var(--mainSpacing);
+  border-radius: 0 0 20px 20px;
+}
+
+/* end of room  */
+/*# sourceMappingURL=RoomCard.css.map */

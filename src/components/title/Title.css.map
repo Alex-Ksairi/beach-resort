@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,WAAW;AACX,AAAA,cAAc,CAAC;EACX,UAAU,EAAE,MAAM;EAClB,aAAa,EAAE,IAAI;CAetB;;AAjBD,AAII,cAJU,CAIV,EAAE,CAAC;EACC,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,kBAAkB;EAClC,cAAc,EAAE,UAAU;EAC1B,aAAa,EAAE,IAAI;CACtB;;AATL,AAWI,cAXU,CAWV,GAAG,CAAC;ECZJ,KAAK,EDaqB,IAAI;ECZ9B,MAAM,EDY0B,GAAG;EAE/B,MAAM,EAAE,MAAM;EACd,UAAU,EAAE,mBAAmB;CAClC;;AAEH,kBAAkB",
+    "sources": [
+        "Title.scss",
+        "../../styles/_mixin.scss"
+    ],
+    "names": [],
+    "file": "Title.css"
+}

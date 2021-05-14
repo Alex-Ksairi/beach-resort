@@ -126,10 +126,6 @@
   color: var(--primaryColor);
 }
 
-.navbar .nav-center .show-nav {
-  height: auto;
-}
-
 .navbar .nav-center .nav-links .language {
   height: 50px;
   text-align: center;
@@ -145,6 +141,10 @@
   border-radius: 8px;
   background-color: var(--primaryColor);
   color: var(--mainGrey);
+}
+
+.navbar .nav-center .show-nav {
+  height: 250px;
 }
 
 /* end of navbar */

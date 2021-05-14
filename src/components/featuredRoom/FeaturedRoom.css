@@ -1,0 +1,33 @@
+/* featured rooms */
+.featured-rooms {
+  padding: 5rem 0;
+}
+
+.featured-rooms .featured-rooms-center {
+  width: 80vw;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 40px;
+}
+
+@media screen and (min-width: 992px) {
+  .featured-rooms .featured-rooms-center .featured-rooms-center {
+    width: 95vw;
+    max-width: 1170px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .featured-rooms .featured-rooms-center .featured-rooms-center {
+    width: 90vw;
+    -ms-grid-columns: (minmax(330px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
+}
+
+/* end pf featured rooms */
+/*# sourceMappingURL=FeaturedRoom.css.map */

@@ -1,0 +1,86 @@
+// importing mixin, variables
+@import '../../styles/mixin';
+@import '../../styles/variables';
+
+/* room */
+.room {
+    box-shadow: var(--lightShadow);
+    transition: var(--mainTransition);
+    border-radius: 20px;
+
+    &:hover {
+        box-shadow: var(--darkShadow);
+    }
+
+    .img-container {
+        position: relative;
+        transition: var(--mainTransition);
+        border-radius: 20px 20px 0 0;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        &:hover img {
+            opacity: 0.3;
+        }
+
+        &:hover .price-top {
+            opacity: 0;
+        }
+
+        &:hover .room-link {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            transition: var(--mainTransition);
+            border-radius: 20px 20px 0 0
+        }
+
+        .price-top {
+            @include position (absolute, 0, 0);
+            @include padding (0.7rem, 1.8rem, 1.2rem, 0);
+
+            background: rgba(0, 0, 0, 0.8);
+            color: var(--mainWhite);
+            border-bottom-right-radius: 1rem;
+            border-top-left-radius: 1.6rem;
+            font-size: 0.7rem;
+            vertical-align: middle;
+            
+            transition: var(--mainTransition);
+
+            h6 {
+                margin-bottom: 2px;
+                font-size: 1.1rem;
+                font-weight: 300;
+                padding-right: 10px;
+
+                letter-spacing: var(--mainSpacing);
+            }
+        }
+
+        .room-link {
+            @include position (absolute, 50%, 50%);
+
+            transform: scale(0);
+            transition: all 0.3s linear;
+        }
+    }
+
+    .room-info {
+        background: var(--darkGrey);
+        text-transform: capitalize;
+        padding: 0.5rem 0;
+        text-align: center;
+        font-weight: 800;
+        font-size: 1.3rem;
+        letter-spacing: var(--mainSpacing);
+        border-radius: 0 0 20px 20px;
+    }
+}
+  
+/* end of room  */
