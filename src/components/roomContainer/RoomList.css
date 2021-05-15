@@ -1,0 +1,39 @@
+.empty-search {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem 0;
+  padding: 1rem;
+  letter-spacing: var(--mainSpacing);
+}
+
+/* roomList */
+.roomsList {
+  padding: 5rem 0;
+}
+
+.roomsList .roomsList-center {
+  width: 80vw;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(270px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .roomsList .roomsList-center .roomsList-center {
+    width: 95vw;
+    max-width: 1170px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .roomsList .roomsList-center .roomsList-center {
+    width: 90vw;
+  }
+}
+
+/* end of roomList */
+/*# sourceMappingURL=RoomList.css.map */
