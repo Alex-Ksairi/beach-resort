@@ -1,6 +1,3 @@
-// importing styling scss
-import './HomePage.scss';
-
 // importing hero component
 import Hero from "../../components/hero/Hero";
 
@@ -25,7 +22,7 @@ export default function HomePage() {
         <React.Fragment>
             {/* <Hero hero='defaultHero'/> */}
             <Hero>
-                <Banner title="luxurious rooms" subtitle="deluxe rooms starting from 399€">
+                <Banner title="luxurious rooms" subtitle="deluxe rooms starting from 299€">
                     <Link to="/rooms" className="btn-primary">
                         our rooms
                     </Link>

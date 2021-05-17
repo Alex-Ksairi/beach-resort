@@ -1,13 +1,196 @@
+// importing mixin
+@import '../../styles/mixin';
+
 .footer {
     width: 100%;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-
     background-color: #333;
     color: whitesmoke;
     font-size: 1rem;
 
     position: static;
     bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .main-container {
+        padding: 50px 40px;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 576px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    h3 {
+        text-transform: uppercase;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    hr {
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        margin-bottom: 10px;
+
+        a {
+            color: #777;
+            font-size: 1.1rem;
+            margin-left: 10px;
+        }
+
+        .email , .phone , .location  {
+            padding-bottom: 10px;
+        }
+
+        i {
+            color: var(--primaryColor);
+        }
+    }
+
+    .contact {
+        .contact-social-media {
+            .fab {
+                color: var(--primaryColor);
+                padding: 5px;
+                font-size: 1.5rem;
+
+                &:hover {
+                    color: #1d2e0ab2;
+                }
+            }
+        }
+    }
+
+    .payment {
+        span {
+            width: calc(33.3% - 7px);
+            border: 1px solid #777;
+            font-size: 1.2rem;
+            padding: 10px;
+            text-align: center;
+
+            display: inline-block;
+
+            &:hover {
+                color: var(--primaryColor);
+                cursor: pointer;
+            }
+        }
+
+        .payPal {
+            margin: 0 10px;
+        }
+    }
+
+    .newsletter {
+        input, button {
+            padding: 8px;
+        }
+
+        input {
+            width: calc(66.6% - 10px);
+            margin-right: 10px;
+
+            &::placeholder {
+                color: var(--primaryColor);
+            }
+        }
+
+        input[type="text"] {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid var(--primaryColor);
+        }
+
+        button {
+            width: calc(33.3%);
+            font-size: 1rem !important;
+        }
+    }
+
+    .footer-container {
+        background-color: #222;
+        width: 100vw;
+        height: 70px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .go-top {
+            font-size: 1.5rem;
+
+            i {
+                color: #99844c;
+                border: 1px solid #777;
+                padding: 10px;
+                border-radius: 50%;
+
+                &:hover {
+                    color: #41330e;
+                    background-color: #99844c;
+                    border: 1px solid transparent;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+
+            span a {
+                color: #fff;
+
+                &:hover {
+                    color: var(--primaryColor);
+                }
+            }
+
+            p {
+                color: #777;
+                text-transform: uppercase;
+            }
+        }
+
+        .question {
+            margin-top: -70px;
+            border: 1px solid #777;
+            border-radius: 20%;
+            padding: 15px;
+            font-size: 1.3rem;
+
+            display: none;
+
+            @media screen and (min-width: 768px) {
+                display: block;
+            }
+
+            &:hover {
+                background-color: #99844c;
+                color: #41330e;
+                cursor: pointer;
+            }
+
+            span {
+                margin-left: 10px;
+            }
+        }
+    }
 }

@@ -1,8 +1,6 @@
 // importing styling scss
 import Hero from "../../components/hero/Hero";
 
-// importing hero component
-import "./errorPage.scss";
 
 // importing Banner, Link
 import Banner from "../../components/banner/Banner";

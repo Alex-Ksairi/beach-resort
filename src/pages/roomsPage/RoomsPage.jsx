@@ -4,9 +4,6 @@ import React from "../../../node_modules/react";
 // importing Link
 import { Link } from "react-router-dom";
 
-// importing styling scss
-import './RoomsPage.scss';
-
 // importing hero component
 import Hero from "../../components/hero/Hero";
 
