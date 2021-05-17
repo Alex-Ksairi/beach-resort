@@ -129,11 +129,12 @@
         height: 70px;
 
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
 
         .go-top {
             font-size: 1.5rem;
+            margin-left: 50px;
 
             i {
                 color: #99844c;

@@ -77,7 +77,7 @@
   grid-row-gap: 1rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   .single-room-images,
   .single-room-info,
   .room-extras {

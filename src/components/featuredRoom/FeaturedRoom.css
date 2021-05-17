@@ -14,14 +14,14 @@
   grid-column-gap: 40px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   .featured-rooms .featured-rooms-center .featured-rooms-center {
     width: 95vw;
     max-width: 1170px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .featured-rooms .featured-rooms-center .featured-rooms-center {
     width: 90vw;
     -ms-grid-columns: (minmax(330px, 1fr))[auto-fit];

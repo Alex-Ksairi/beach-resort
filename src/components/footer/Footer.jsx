@@ -66,9 +66,9 @@ function Footer() {
                 </div>
             </div>
             <div className="footer-container">
-                <div className="question">Have questions?
+                {/*<div className="question">Have questions?
                     <span><i className="far fa-comment"></i></span>
-                </div>
+                </div>*/}
                 <div className="copyright">
                     <p>all rights ©️ 2020 - 2021</p>
                     <span><a href="..">AGB</a></span>

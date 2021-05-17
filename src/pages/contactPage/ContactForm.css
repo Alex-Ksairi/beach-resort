@@ -1,0 +1,109 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #3333333b;
+  padding: 5% 10%;
+}
+
+.container .sub-container {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+  .container .sub-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container .sub-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.container .sub-container .form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--primaryColor);
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.container .sub-container .form input[type=text], .container .sub-container .form input[type=email], .container .sub-container .form textarea {
+  border: none;
+  border-bottom: 2px solid var(--primaryColor);
+  background-color: transparent;
+  border-radius: 3px;
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.container .sub-container .form input[type=text]::-webkit-input-placeholder, .container .sub-container .form input[type=email]::-webkit-input-placeholder, .container .sub-container .form textarea::-webkit-input-placeholder {
+  color: #333605;
+}
+
+.container .sub-container .form input[type=text]:-ms-input-placeholder, .container .sub-container .form input[type=email]:-ms-input-placeholder, .container .sub-container .form textarea:-ms-input-placeholder {
+  color: #333605;
+}
+
+.container .sub-container .form input[type=text]::-ms-input-placeholder, .container .sub-container .form input[type=email]::-ms-input-placeholder, .container .sub-container .form textarea::-ms-input-placeholder {
+  color: #333605;
+}
+
+.container .sub-container .form input[type=text]::placeholder, .container .sub-container .form input[type=email]::placeholder, .container .sub-container .form textarea::placeholder {
+  color: #333605;
+}
+
+.container .sub-container .form .btn-primary {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .container .sub-container .map-container {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container .sub-container .map-container {
+    margin-top: 50px;
+  }
+}
+
+.container .sub-container .map-container .map-link iframe {
+  border: none;
+  width: 100%;
+  height: 35vh;
+}
+
+.container .alert {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -85%);
+          transform: translate(-50%, -85%);
+  z-index: 200;
+  padding: 20px 40px;
+  background-color: var(--mainBlack);
+  color: var(--primaryColor);
+  border-radius: 10px;
+  font-size: 1.4rem;
+  text-align: justify;
+  display: block;
+}
+
+.container .alert2 {
+  display: none;
+}
+/*# sourceMappingURL=ContactForm.css.map */

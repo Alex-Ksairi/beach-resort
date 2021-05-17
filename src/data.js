@@ -1,20 +1,3 @@
-import room1 from "./images/details-1.jpeg";
-import room2 from "./images/details-2.jpeg";
-import room3 from "./images/details-3.jpeg";
-import room4 from "./images/details-4.jpeg";
-// import img1 from "./images/room-1.jpeg";
-import img2 from "./images/room-2.jpeg";
-import img3 from "./images/room-3.jpeg";
-import img4 from "./images/room-4.jpeg";
-import img5 from "./images/room-5.jpeg";
-import img6 from "./images/room-6.jpeg";
-import img7 from "./images/room-7.jpeg";
-import img8 from "./images/room-8.jpeg";
-import img9 from "./images/room-9.jpeg";
-import img10 from "./images/room-10.jpeg";
-import img11 from "./images/room-11.jpeg";
-import img12 from "./images/room-12.jpeg";
-
 let items = [
   {
     sys: {
@@ -52,21 +35,21 @@ let items = [
         {
           fields: {
             file: {
-              url: room2
+              url: "/images/details-2.jpeg",
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: "/images/details-3.jpeg",
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: "/images/details-4.jpeg",
             }
           }
         }
@@ -102,28 +85,28 @@ let items = [
         {
           fields: {
             file: {
-              url: img2
+              url: "/images/room-2.jpeg",
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: "/images/details-2.jpeg",
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: "/images/details-3.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: "/images/details-4.jpeg"
             }
           }
         }
@@ -159,28 +142,28 @@ let items = [
         {
           fields: {
             file: {
-              url: img3
+              url: "/images/room-3.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: "/images/details-2.jpeg",
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: "/images/details-3.jpeg",
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: "/images/details-4.jpeg",
             }
           }
         }
@@ -216,28 +199,28 @@ let items = [
         {
           fields: {
             file: {
-              url: img4
+              url: "/images/room-4.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: "/images/details-2.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: "/images/details-3.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: "/images/details-4.jpeg"
             }
           }
         }
@@ -273,28 +256,28 @@ let items = [
         {
           fields: {
             file: {
-              url: img5
+              url: "/images/room-5.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: "/images/details-2.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: "/images/details-3.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: "/images/details-4.jpeg"
             }
           }
         }
@@ -330,28 +313,28 @@ let items = [
         {
           fields: {
             file: {
-              url: img6
+              url: "/images/room-6.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: "/images/details-2.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: "/images/details-3.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: "/images/details-4.jpeg"
             }
           }
         }
@@ -387,28 +370,28 @@ let items = [
         {
           fields: {
             file: {
-              url: img7
+              url: "/images/room-7.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: "/images/details-2.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: "/images/details-3.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: "/images/details-4.jpeg"
             }
           }
         }
@@ -444,28 +427,28 @@ let items = [
         {
           fields: {
             file: {
-              url: img8
+              url: "/images/room-8.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: "/images/details-2.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: "/images/details-3.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: "/images/details-4.jpeg"
             }
           }
         }
@@ -501,28 +484,28 @@ let items = [
         {
           fields: {
             file: {
-              url: img9
+              url: "/images/room-9.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: "/images/details-2.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: "/images/details-3.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: "/images/details-4.jpeg"
             }
           }
         }
@@ -558,28 +541,28 @@ let items = [
         {
           fields: {
             file: {
-              url: img10
+              url: "/images/room-10.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: "/images/details-2.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: "/images/details-3.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: "/images/details-4.jpeg"
             }
           }
         }
@@ -615,28 +598,28 @@ let items = [
         {
           fields: {
             file: {
-              url: img11
+              url: "/images/room-11.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: "/images/details-2.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: "/images/details-3.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: "/images/details-4.jpeg"
             }
           }
         }
@@ -672,28 +655,28 @@ let items = [
         {
           fields: {
             file: {
-              url: img12
+              url: "/images/room-12.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: "/images/details-2.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: "/images/details-3.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: "/images/details-4.jpeg"
             }
           }
         }
@@ -729,28 +712,28 @@ let items = [
         {
           fields: {
             file: {
-              url: room1
+              url: "/images/details-1.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: "/images/details-2.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: "/images/details-3.jpeg"
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: "/images/details-4.jpeg"
             }
           }
         }

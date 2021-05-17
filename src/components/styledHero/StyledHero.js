@@ -2,7 +2,7 @@
 import styled from "../../../node_modules/styled-components";
 
 // importing a default backgroundImage in case of an error or missing data
-import defaultBackgroundImage from '../../images/room-12.jpeg';
+import defaultBackgroundImage from '../../images/room-11.jpeg';
 
 let StyledHero = styled.header`
     min-height: 60vh;

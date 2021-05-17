@@ -9,13 +9,13 @@
   letter-spacing: var(--mainSpacing);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   .banner .banner {
     padding: 5rem 6rem;
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
   .banner .banner {
     padding: 2rem 3rem;
   }
@@ -25,13 +25,13 @@
   font-size: 3rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   .banner h1 h1 {
     font-size: 6rem;
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
   .banner h1 h1 {
     font-size: 3rem;
   }

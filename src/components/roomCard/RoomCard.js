@@ -2,7 +2,7 @@
 import { Link } from "../../../node_modules/react-router-dom";
 
 // importing a default images in case of an error or missing images
-import defaultImage from "../../images/room-1.jpeg";
+import defaultImage from "../../images/room-11.jpeg";
 
 // importing PropTypes
 import PropTypes from "../../../node_modules/prop-types";
