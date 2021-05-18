@@ -3,38 +3,35 @@
 @import '../../styles/mixin' ;
 
 // NavBar styling
+
 .navbar {
-    @include measurement (100%, auto);
-    @include position (fixed, 0, 0);
+    width: 100%;
+    height: 80px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
     
     background-color: var(--bgNavBar);
     z-index: 1;
 
-    @include screen {
-        width: 100%;
-    }
+    display: flex;
+    justify-content: space-between;
 
-    .nav-center {
-        @include tablet {
-            .nav-center {
-                margin: 0 auto;
-                display: flex;
-            }
-        }
+    .nav-container {
+        display: flex;
 
-        .nav-header {
-            @include display (flex, space-between, unset);
-    
+        .logo-div {
             .logo-link {
                 color: var(--mainBlack);
     
                 .logo {
-                    @include margin (25px, 50px, 30px, 0);
+                    margin: 25px 0 30px 50px;
         
                     border: 2px solid #555;
         
                     span {
-                        @include margin (0, 4px, 0, 4px);
+                        margin: 0 4px;
         
                         font-size: 1.9rem;
                         letter-spacing: var(--mainSpacing);
@@ -52,51 +49,25 @@
                     }
                 }
             }
-    
-            .nav-btn {
-                margin-right: 50px;
-                background: transparent;
-                border: none;
-                cursor: pointer;
-                outline: none;
-
-                @include screen {
-                    .nav-btn {
-                        display: none;
-                    }
-                }
-    
-                @include tablet {
-                    .nav-btn {
-                      display: block;
-                    }
-                }
-    
-                .nav-icon {
-                    font-size: 2.2rem;
-                    color: var(--primaryColor);
-                }
-            }
         }
+        
 
         .nav-links {
-            height: 0;
-            overflow: hidden;
-            transition: var(--mainTransition);
-    
-            @include tablet {
-                .nav-links {
-                    height: auto;
-                    display: flex;
-                    margin-left: 4rem;
-                }
-            }
-    
-            a {
-                @include padding (20px, 20px, 20px, 20px);
-        
+            // transition: var(--mainTransition);
+            display: flex;
+            flex-direction: row;
+
+            line-height: 80px;
+            margin-left: 100px;
+
+            display: none;
+
+            @media screen and (min-width: 768px) {
                 display: block;
-                line-height: 30px;
+            }
+
+            a {
+                padding: 0 20px;
                 font-size: 1.5rem;
                 font-weight: 600;
                 background-color: var(--bgNavBar);
@@ -104,27 +75,21 @@
                 text-align: center;
                 transition: var(--mainTransition);
                 letter-spacing: var(--mainSpacing);
-    
-                @include tablet {
-                    a {
-                        margin: 0 1rem;
-                        padding: 0.5rem 0;
-                    }
-                }
         
                 &:hover {
                     color: var(--primaryColor);
                 }
             }
 
-            .language {
-                // @include padding (0, 0, 0, 20px);
-                height: 50px;
-                text-align: center;
-                background-color: var(--bgNavBar);
+            .languages {
+                display: none;
+
+                    @media screen and (min-width: 768px) {
+                        display: block;
+                    }
             
-                select {
-                    @include padding (5px, 5px, 5px, 5px);
+                .language-options {
+                    padding: 5px;
             
                     border: none;
                     border-radius: 8px;
@@ -133,13 +98,92 @@
                 }
             }
         }
+    }
 
-        .show-nav {
-            height: 250px;
+    .nav-btn {
+        margin-right: 50px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        .nav-icon {
+            font-size: 2.2rem;
+            color: var(--primaryColor);
+        }
+    }
+
+    .nav-small {
+        display: flex;
+        position: relative;
+
+        .logo-div {
+            .logo-link {
+                color: var(--mainBlack);
+    
+                .logo {
+                    margin: 25px 0 30px 50px; 
+                    border: 2px solid #555; 
+                    span {
+                        margin: 0 4px; 
+                        font-size: 1.9rem;
+                        letter-spacing: var(--mainSpacing);
+                    } 
+                    span:first-child {
+                        font-weight: 800;
+                        text-shadow: $shadowDark;
+                    } 
+                    span:last-child {
+                        color: var(--primaryColor);
+                        font-weight: 400;
+                        text-shadow: $shadowLight;
+                    }
+                }
+            }
+        } 
+
+        .nav-links {
+            transition: var(--mainTransition);
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+
+            top: 80px;
+            width: 100vw;
+
+            a {
+                padding: 20px 0;
+                font-size: 1.5rem;
+                font-weight: 600;
+                background-color: var(--bgNavBar);
+                color: #555;
+                text-align: center;
+                transition: var(--mainTransition);
+                letter-spacing: var(--mainSpacing); 
+                &:hover {
+                    color: var(--primaryColor);
+                }
+            }
+        } 
+    }
+
+    .nav-btn {
+        margin-right: 50px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+
+        .nav-icon {
+            font-size: 2.2rem;
+            color: var(--primaryColor);
         }
     }
 }
-
-/* end of navbar */
 
 

@@ -33,6 +33,7 @@
 
     h3 {
         text-transform: uppercase;
+        color: var(--primaryColor);
     }
 
     p {
@@ -102,9 +103,11 @@
             padding: 8px;
         }
 
-        input {
+        input[type=text] {
             width: calc(66.6% - 10px);
             margin-right: 10px;
+            outline: none;
+            color: whitesmoke;
 
             &::placeholder {
                 color: var(--primaryColor);

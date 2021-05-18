@@ -23,6 +23,5 @@ export default function RoomsPage() {
             </Hero>
             <RoomsContainer />
         </React.Fragment>
-        
     )
 }

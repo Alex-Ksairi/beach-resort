@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { FaAlignRight } from "react-icons/fa";
 
 // importing NavBar scss
-import './navTest.scss';
+import './NavBar.scss';
 
 export default class NavBar extends Component {
     // setting up the state
@@ -64,9 +64,6 @@ export default class NavBar extends Component {
                         <button type="button" className="nav-btn" onClick={this.handleToggle}>
                             <FaAlignRight className="nav-icon" />
                         </button>
-
-
-                            
             </nav>
         )
     }

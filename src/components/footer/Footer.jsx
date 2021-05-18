@@ -17,8 +17,7 @@ function Footer() {
                 <div className="about-us">
                     <h3>about us</h3>
                     <hr />
-                    <p>Lorem ipsum dolor sit amen, consectetur advising elite. Nam vitae orange massa, at consecrate ipsum. Sed ullamcorper, dui consecrate vehicle volta, dolor negus hendrix eliot
-                    </p>
+                    <p>The Beach Resort is located in the midst of an ancient palm grove near a nature reserve, sand dunes and stunning beaches on an island that enjoys an ideal year-round climate. We created the soothing guestroom décor with distinctive colors and patterns.</p>
                 </div>
                 <div className="contact">
                     <div className="contact-info">
