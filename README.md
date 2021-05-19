@@ -1,13 +1,17 @@
-# Getting Started with Create React App
+# Beach Resort application 
+The main project was taken from YouTube [link](https://www.youtube.com/watch?v=ScDWrogElmo&t=5274s).
 
-In order to install node-sass package [node-sass](https://www.npmjs.com/package/node-sass).
+## Some changes were added to this new version of the application and the whole application was styled by using SASS and it's responsive on tablet and mobile version to be used properly.
+## A contact page was dynamically to the navbar which direct you the page with some content such as a form submit and a map
+## At the bottom you will find the footer with some styling
 
-In order to install react-icons package [icons](https://react-icons.github.io/react-icons/).
 
-In order to install react-router-dom package [react-router-dom](https://reactrouter.com/web/guides/quick-start).
+### Getting Started with Create React App
 
-In order to install styled-components package [styled-components](https://styled-components.com/).
-
+#### In order to install node-sass package [node-sass](https://www.npmjs.com/package/node-sass).
+#### In order to install react-icons package [icons](https://react-icons.github.io/react-icons/).
+#### In order to install react-router-dom package [react-router-dom](https://reactrouter.com/web/guides/quick-start).
+#### In order to install styled-components package [styled-components](https://styled-components.com/).
 
 <!-- STEPS
     1- create-react-app + file name 
