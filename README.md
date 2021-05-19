@@ -33,4 +33,6 @@ In order to install styled-components package [styled-components](https://styled
     11- setting up rooms container component including room filter and list
     12- option one using consumer inside react.hook in RoomContainer
         option two using a higher order function in context.js
+
+    13 - setting up cookies and adding its data to localStorage in order to not show cookies when reloading pages
 -->

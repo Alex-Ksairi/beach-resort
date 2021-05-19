@@ -20,6 +20,9 @@ import ErrorPage from "./pages/errorPage/errorPage";
 // importing route
 import { Switch, Route } from "react-router-dom";
 
+// using cookies banner 
+import Cookies from "./components/cookies/Cookies";
+
 
 function App() {
   return (
@@ -33,6 +36,7 @@ function App() {
         <Route exact component={ErrorPage}/>
       </Switch>
       <Footer />
+      <Cookies />
     </React.Fragment>
   );
 }

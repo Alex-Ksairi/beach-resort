@@ -2,7 +2,7 @@
 import Hero from "../../components/hero/Hero";
 
 // importing React
-import React from "../../../node_modules/react";
+import React, { useEffect } from "../../../node_modules/react";
 
 // importing Link
 import { Link } from "../../../node_modules/react-router-dom";
@@ -18,6 +18,11 @@ import FeaturedRoom from '../../components/featuredRoom/FeaturedRoom';
 
 
 export default function HomePage() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
     return (
         <React.Fragment>
             {/* <Hero hero='defaultHero'/> */}

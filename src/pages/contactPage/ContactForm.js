@@ -26,6 +26,7 @@ const ContactForm = () => {
 
     setTimeout(() => {
       setStatus("submit");
+      e.target.reset()
     }, 2000);
 
     setInterval(() => {

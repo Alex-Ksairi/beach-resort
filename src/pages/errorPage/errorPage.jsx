@@ -1,12 +1,18 @@
 // importing styling scss
 import Hero from "../../components/hero/Hero";
 
+import React, { useEffect } from "react";
+
 
 // importing Banner, Link
 import Banner from "../../components/banner/Banner";
 import { Link } from "../../../node_modules/react-router-dom";
 
-export default function errorPage() {
+export default function ErrorPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
     return (
         <div>
             <Hero>

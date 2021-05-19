@@ -1,5 +1,5 @@
 // importing React
-import React from "../../../node_modules/react";
+import React, { useEffect } from "../../../node_modules/react";
 
 // importing Link
 import { Link } from "react-router-dom";
@@ -14,6 +14,11 @@ import Banner from "../../components/banner/Banner";
 import RoomsContainer from "../../components/roomContainer/RoomsContainer";
 
 export default function RoomsPage() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
     return (
         <React.Fragment>
             <Hero hero="roomsHero">

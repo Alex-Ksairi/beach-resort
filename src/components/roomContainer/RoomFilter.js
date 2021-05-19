@@ -47,7 +47,7 @@ export default function RoomFilter({rooms}) {
                 {/* select type */}
                 <div className="form-group">
                     <label htmlFor="type">room type</label>
-                    <select name="type" id="type" value={type} className="form-control" onChange={handleChange}>
+                    <select name="type" id="type-" value={type} className="form-control" onChange={handleChange}>
                         {uniqueTypes}
                     </select>
                 </div>
@@ -56,7 +56,7 @@ export default function RoomFilter({rooms}) {
                 {/* select capacity */}
                 <div className="form-group">
                     <label htmlFor="capacity">guests</label>
-                    <select name="capacity" id="type" value={capacity} className="form-control" onChange={handleChange}>
+                    <select name="capacity" id="type-1" value={capacity} className="form-control" onChange={handleChange}>
                         {guests}
                     </select>
                 </div>
@@ -73,8 +73,8 @@ export default function RoomFilter({rooms}) {
                 <div className="form-group">
                     <label htmlFor="size">room size</label>
                     <div className="size-inputs">
-                        <input type="number" name="minSize" min={minSize} id="size" value={minSize} className="size-input" onChange={handleChange} />
-                        <input type="number" name="maxSize" min={maxSize} id="size" value={maxSize} className="size-input" onChange={handleChange} />
+                        <input type="number" name="minSize" min={minSize} id="size-1" value={minSize} className="size-input" onChange={handleChange} />
+                        <input type="number" name="maxSize" min={maxSize} id="size-2" value={maxSize} className="size-input" onChange={handleChange} />
                     </div>
                 </div>
 

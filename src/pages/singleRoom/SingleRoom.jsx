@@ -36,7 +36,7 @@ export default class SingleRoom extends React.Component {
     static contextType = RoomContext;
 
     // lifecycle method
-    componentDidMount() {};
+    componentDidMount = () => window.scrollTo(0, 0);
 
     render() {
         let {getRoom} = this.context;
