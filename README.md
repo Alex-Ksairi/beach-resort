@@ -1,9 +1,12 @@
 # Beach Resort application 
 The main project was taken from YouTube --> check [link](https://www.youtube.com/watch?v=ScDWrogElmo&t=5274s).
 
+
 Some changes were added to this new version of the application and the whole application was styled by using SASS and it's responsive on tablet and mobile version to be used properly.
-A contact page was dynamically to the navbar which direct you the page with some content such as a form submit and a map
-At the bottom you will find the footer with some styling
+
+A contact page was added dynamically to the navbar which direct you the page with some content such as a form submit and a map.
+
+At the bottom you will find the footer with some styling.
 
 
 #### Getting Started with Create React App
