@@ -60,10 +60,10 @@
             line-height: 80px;
             margin-left: 100px;
 
-            display: none;
+            display: block;
 
-            @media screen and (min-width: 768px) {
-                display: block;
+            @include tablet {
+                display: none;
             }
 
             a {
@@ -80,23 +80,6 @@
                     color: var(--primaryColor);
                 }
             }
-
-            .languages {
-                display: none;
-
-                    @media screen and (min-width: 768px) {
-                        display: block;
-                    }
-            
-                .language-options {
-                    padding: 5px;
-            
-                    border: none;
-                    border-radius: 8px;
-                    background-color: var(--primaryColor);
-                    color: var(--mainGrey);
-                }
-            }
         }
     }
 
@@ -108,7 +91,7 @@
         outline: none;
         display: none;
 
-        @media (max-width: 768px) {
+        @include tablet {
             display: block;
         }
 
