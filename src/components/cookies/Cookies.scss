@@ -30,10 +30,18 @@
         h1 {
             color: var(--primaryColor);
             font-size: 2rem;
+
+            @include mobile {
+                font-size: 1.5rem;
+            }
         }
 
         p {
             font-size: 1.3rem;
+
+            @include mobile {
+                font-size: 0.9rem;
+            }
 
             a {
                 color: var(--mainBlack);
@@ -49,12 +57,20 @@
     .manage {
         margin: 80px 60px;
 
+        @include mobile {
+            margin: 50px 60px;
+        }
+
         a {
             text-decoration: underline;
             font-weight: 400;
             margin-left: 50px;
             font-size: 1.4rem;
             color: var(--mainBlack);
+
+            @include mobile {
+                font-size: 1rem;
+            }
 
             &:hover {
                 color: var(--primaryColor);
