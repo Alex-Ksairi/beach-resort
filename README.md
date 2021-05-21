@@ -1,4 +1,4 @@
-# In order to see the app in browser, please check the following [link](https://alex-ksairi.github.io/beach-resort/)
+
 
 
 
